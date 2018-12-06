@@ -51,6 +51,7 @@
     height: 61px;
     left: 107px;
     top: 129px;
+    display: none;
 }
 .custom .bumper.pressed{
     opacity: 1;
@@ -94,6 +95,7 @@
     height: 33px;
     top: 264px;
     left: 306px;
+    display: none;
 }
 .custom .back, .custom .start{
     background: url(http://mrmcpowned.com/gamepad/xbox-assets/start-select.svgz);
@@ -179,6 +181,7 @@
 .custom .stick.right{
     top: 113px;
     left: 288px;
+    display: none;
 }
 .custom .dpad{
     position: absolute;
@@ -186,6 +189,7 @@
     height: 111px;
     top: 345px;
     left: 223px;
+    display: none;
 }
 .custom .face{
     background: url(http://mrmcpowned.com/gamepad/xbox-assets/dpad.svgz);
