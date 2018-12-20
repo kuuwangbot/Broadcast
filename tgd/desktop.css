@@ -6,7 +6,7 @@ html {
 body {
 letter-spacing: -0.05em !important;
   background: transparent;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'FontAwesome', 'Nanum Gothic', sans-serif;
 }
 
 /* 전체 쉐도우 */
@@ -14,7 +14,7 @@ letter-spacing: -0.05em !important;
 header #header-bar>.row,
 #main .menu-wrapper,
 #main #main-content>div.frame {
-  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);*/
 }
 
 /* 로고밑 NAV bar */
@@ -100,6 +100,9 @@ header #header-bar .fa {
 #board-info #board-info-bottom a {
   color: #7c9ce1;
 }
+#board-info img{
+  display: none;
+}
 
 /* 좌측메뉴 숏컷링크 글씨 색상 */
 
@@ -119,8 +122,23 @@ header #header-bar .fa {
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
   width: 120px !important;
 }
+#article-list>.article-list-row>.item>.list-title>.list-category>span{
+text-overflow: clip;
+}
+#article-list>.article-list-row>.item>.list-title>.list-category {
+display: block;
+letter-spacing: 0;
+text-overflow: ellipsis;
+word-wrap: break-word;
+white-space: nowrap;
+border-right: hidden;
+max-width: 35px;
+overflow: hidden;
+margin-right: -5px
+}
 
 #article-list #article-list-category {
+  font-family: 'FontAwesome';
   border-top: 2px solid #7c9ce1;
   background: white;
 }
@@ -129,8 +147,13 @@ header #header-bar .fa {
   background: white;
 }
 
+
 #article-list>.article-list-row>.item>.list-header>span {
   background-color: #7c9ce1;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-category {
+    font-family:  'FontAwesome';
 }
 
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
@@ -139,6 +162,9 @@ header #header-bar .fa {
 
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
   color: #7c9ce1;
+}
+span.a-badge{
+display: none;
 }
 
 .pagination>.active>a,
@@ -211,6 +237,9 @@ span.a-badge i.fa.fa-info-circle {
 #article-list #boardSearchForm {
   padding-bottom: 20px;
   height: unset;
+}
+#article-option-area{
+display: none;
 }
 
 .btn-primary {
